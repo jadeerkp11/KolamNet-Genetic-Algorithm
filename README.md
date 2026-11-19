@@ -8,6 +8,37 @@ A Python/Streamlit project based on the uploaded **KolamNet** report. It impleme
 - Upload a kolam photo, approximate it as tile masks, optimize it, and export a drawable PNG / tile matrix.
 - Reproducible benchmark runner that writes CSV results.
 
+## Application Screenshots
+
+### 1. Kolam Studio – Homepage
+
+The main interface of KolamNet, where users can
+select grid sizes and explore the application.
+
+![Homepage](screenshots/01-homepage.png)
+
+### 2. Upload a Reference Kolam
+
+Users can upload an existing Kolam photograph
+to recreate and optimize the pattern.
+
+![Upload Reference](screenshots/02-upload-reference.png)
+
+### 3. Create Your Kolam
+
+Users can either refine an uploaded pattern
+or generate a completely new Kolam design.
+
+![Create Kolam](screenshots/03-create-kolam.png)
+
+### 4. Generated Kolam Output
+
+The application displays the generated pattern
+along with its fitness score, closed components,
+loop score, ink balance and symmetry.
+
+![Generated Result](screenshots/04-generated-result.png)
+
 ## What's new in this version
 - **New pattern on every click.** Previously the random seed was fixed at 42, so the same input always produced the same kolam. Now each click uses a fresh seed (shown under *Design details*). Untick *New variation on every click* under **Advanced** to get repeatable results.
 - **Creativity slider (photo mode).** 0 = copy the photo as closely as possible (original behaviour); higher = blend in the symmetry / closed-loop goals so the output is inspired by the photo rather than a copy.
